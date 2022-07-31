@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 1;
+    margin: 1px;
+    justify-content: center;
+}
+
+body {
+    background-color:rgb(216, 221, 236);
+}
+
+.header {
+    padding: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(36, 110, 206);
+    color: white;
+    outline: 2px black outset;
+    background-image: url(./images/tech.jpg);
+    background-size:cover;
+    text-align: left;
+}
+.myImage {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0px 25px -60px 25px;
+    border-radius: 25%;
+}
+
+header h1 {
+display: inline-block;
+justify-content: center;
+font-size: 65px;
+text-decoration: underline;
+text-align: center;
+}
+
+.name {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0px 0px 0px 90px;
+}
+
+.header nav {
+    display: inline;
+    padding: 0px;
+    float: right;
+    margin-right: 75px;
+    font-size: 28px;
+    
+}
+
+.header ul {
+    list-style-type: none;
+    color: white;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin: 0px 0px 25px 0px;
+    padding: 5px;
+}
+
+header a {
+    color: white;
+}
+
+.aboutMeText {
+    float: left;
+    margin-block-start: 5px;
+    margin: 50px 0px 90px 0px;
+    font-size: 36px;
+}
+
+.aboutMe {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0px;
+    margin-left: 30px;
+}
+
+.aboutMeInfo {
+    border-left: 5px rgb(0, 0, 0, 0.5) outset;
+    margin-left: 185px;
+    padding-left: 45px;
+    margin-right: 200px;
+    flex: wrap;
+}
+    
+
+.work {
+    text-align: right;
+    padding: 80px;
+    margin: 20px;
+    font-size: 30px;
+    background-color: coral;
+    text-align: center;
+}
+
+.aboutMe h2 {
+    display: block;
+    text-decoration: underline;
+    align-items: center;
+}
+
+.links {
+    display: inline-block;
+    background-color: forestgreen;
+    font-size: 16px;
+    flex: wrap;
+    
+}
+
+
+        
