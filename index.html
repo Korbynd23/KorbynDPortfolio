@@ -16,10 +16,10 @@
             <p class="name">Korbyn Dicari</p>
             <nav>
                 <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#aboutJump">About Me</a></li>
+                    <li><a href="#workJump">Work</a></li>
+                    <li><a href="#resumeJump">Resume</a></li>
+                    <li><a href="#contactJump">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,37 +29,32 @@
 
 </br>
     <main>
-        <section class="aboutMe">
-            <articel>
-                <h2 class="aboutMeText">About Me</h2>
-                <p class="aboutMeInfo"> Hello! My name is Korbyn Dicari and I new to coding, however, I am currently taking a Coding Boot Camp through Trilogy at Ohio State University. GIVEN I need to sample a potential employee's previous work
-                WHEN I load their portfolio
-                THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-                WHEN I click one of the links in the navigation
-                THEN the UI scrolls to the corresponding section
-                WHEN I click on the link to the section about their work
-                THEN the UI scrolls to a section with titled images of the developer's applications
-                WHEN I am presented with the developer's first application
-                THEN that application's image should be larger in size than the others
-                WHEN I click on the images of the applications
-                THEN I am taken to that deployed application
-                WHEN I resize the page or view the site on various screens and devices
-                THEN I am presented with a responsive layout that adapts to my viewport      
+        <section class="aboutMe" id="aboutJump">
+            <article>
+                <h2 class="aboutMeText">About Me:</h2>
+                <p class="aboutMeInfo"> Hello! My name is Korbyn Dicari and I am new to coding, however, I am currently taking a Coding Boot Camp through Trilogy at Ohio State University. Although this is a new career route for me, I have spent 8+ years running and managing multi-million dollar restaraunt establishments everywhere from Chicago to Hawaii. After leaving the food industry I enrolled in Universal Technical Institute  (Pheonix, AZ), in which I studied Automotive and Diesel Technolgies. Upon completetion of my education in Phoenix I relocated to Columbus in 2018 and accepted a job as a traveling field tech with a storage solutions company. My primary work included diagnosing and repairing multiple types of equipment from electric forklifts to conveyors, some of my clients included Amazon, Big Lots, L Brands and Freightliner. As time progressed working became alot more "tech" technical, alot less mechanical fixes and more automation, software and server repairs. This type of work had reaffirmed my love for technology and pushed me to further my education. All this put me right here in the Coding Boot Camp with a creative drive and a strong ambition for learning to take my career to the next level.     
                     </p>
-            </articel>
+            </article>
+            <br>
+
+
+            </br>
         </section>
         <section>
-            <article>
-                <h3 class="work">Work: Under Construction</h3>
+            <article class="workPhotos" id="workJump">
+                <a href="https://www.trilogyed.com/" target="blank"><img class="column" id="bigPic" src="./assets/images/comingSoon.jpg" /> 
+                <a href="https://www.google.com" target="blank"><img class="column" id="smallPic" src="./assets/images/loading.gif" />  
+                <a href="https://www.facebook.com" target="blank"><img class="column" id="lowerPic" src="./assets/images/portfolioPic.jpg" />
             </article>
+                <!--Need to add alt attributes for images-->
         </section>
-        <section class="links">
-            <ul>
-                <a href="https://www.linkedin.com/in/korbyn-dicari-7a87a9244/" target="blank">Linkedin</a>
-                <a href="https://github.com/Korbynd23" target="blank">GitHub</a>
-                <a href="tel">513-328-6704</a>
-                <a href="Kdicari24@gmai.com">Kdicari24@gmail.com</a>    
-            </ul>
+        <section class="links" id="contactJump">
+            <article>
+                <a id="one" class="space" href="https://www.linkedin.com/in/korbyn-dicari-7a87a9244/" target="blank">< Linkedin ></a> 
+                <a id="two" class="space" href="https://github.com/Korbynd23" target="blank">|&nbsp&nbsp&nbsp|&nbsp&nbsp< GitHub ></a>
+                <a id="three" href="tel">|&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp< c:513-328-6704 ></a> 
+                <a id="four" href="Kdicari24@gmai.com">|&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp< Kdicari24@gmail.com ></a>    
+            </article>
         </section>
     </main>
   </body>
