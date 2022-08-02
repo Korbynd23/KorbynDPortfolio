@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     padding: 1;
     margin: 0px;
 }
@@ -9,15 +10,15 @@ body {
 }
 
 .header {
-    padding: 50px;
+    padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:rgb(36, 110, 206);
     color: white;
     outline: 3px black outset;
     background-image: url(./images/tileable-wood-colored.png);
-    background-size:auto;
+    background-size:20%;
     background-color: #2a2222;
-    text-align: left;
+    margin-top: 30px;
 }
 .myImage {
     max-width: 150px;
@@ -26,14 +27,31 @@ body {
     border-radius: 25%;
 }
 
-header h1 {
-display: inline-block;
-justify-content: center;
-font-size: 65px;
-text-decoration: underline;
-text-align: center;
+.jumps {
+    margin-left: 275px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    font-weight: bold;
+    font-size: 25px;
 }
 
+header h1 {
+display: inline-block;
+font-size: 65px;
+text-decoration: underline;
+}
+
+.header nav {
+    display: flex;
+    /* flex-direction: row; */
+    /* margin-left: 500px; */
+    font-size: 28px;
+    justify-content: flex-end;
+    align-content: space-around;    
+}
 .name {
     font-style: italic;
     font-weight: 100;
@@ -41,31 +59,13 @@ text-align: center;
     margin: 0px 0px 0px 90px;
 }
 
-.header nav {
-    display: inline;
-    padding: 0px;
-    float: right;
-    margin-right: 75px;
-    font-size: 28px;    
-}
-
-.header ul {
-    list-style-type: none;
-    color: white;
-}
-
-.header nav ul li {
-    display: inline-block;
-    margin: 0px 0px 25px 0px;
-    padding: 5px;
-}
 
 header a {
     color: white;
 }
 
 .aboutMeText {
-    float: left;
+    display: flex;
     margin-block-start: 5px;
     font-size: 36px;
     flex-wrap: wrap;
@@ -80,40 +80,43 @@ header a {
 
 .aboutMeInfo {
     border-left: 5px rgb(0, 0, 0, 0.5) outset;
-    margin-left: 185px;
     padding-left: 45px;
     margin-right: 200px;
-    flex: wrap;
     font-size: 20px;
-    font-weight: bold;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin-top: 30px;
 }
     
 .workPhotos {
-    display: inline-block;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
     margin: 20px;
 }
- 
-.column {
-    width: 33.33%;
-    padding: 5px;
-  }
+
 
   #bigPic {
-    float: left;
-    box-shadow: 0px 40px 70px 0px;
-    margin:105px 35px 130px 240px;
-    padding: 0px;
+    box-shadow: 0px 0px 57px 15px rgb(247, 137, 47);
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 20px;
   }
 
 #smallPic {
-    margin: 5px 5px 15px 5px;
-    box-shadow: 0px 40px 70px 0px;
-    padding: 0px;
+    margin: 50px 5px 40px 5px;
+    box-shadow: 2px -5px 70px 12px rgb(90, 145, 228);
+    border-radius: 5%;
 }
 
 #lowerPic {
-    box-shadow: 0px 40px 70px 0px;
-    padding: 0px;
+    box-shadow: 2px -5px 70px 12px rgb(247, 137, 47);
+    border-radius: 5%;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .aboutMe h2 {
@@ -126,8 +129,9 @@ header a {
     font-size: 36px;
     margin: 125px 10px;
     border: #2a2222;
-    background-color: rgb(0, 0, 0, 0.75);
-    border-radius: 5%;
+    background-color: rgb(0, 0, 0, 0.80);
+    flex-wrap: wrap;
+    min-width: 585px;
 }
 
 #one {
@@ -163,13 +167,34 @@ a:link {
   }
   
   a:hover {
-    text-decoration: underline ;
+    text-decoration: underline;
+  }
+
+  .workPhotos a:hover {
+    margin: auto;
   }
   
   a:active {
     text-decoration:solid;
   }
 
-  @media screen {
-    
+  @media screen and (max-width=768px) {
+     .links {
+        width: 100%; }
+    nav {
+        flex-direction: column;
+        height: fit-content;
+    }
+    nav ul li {
+        flex-direction: column;
+        width: 100%
+    }
+    nav .workPhotos {
+        flex-direction: column;
+        width: 100%  
+    }
+   .smallPic {
+        flex-direction: column;
+        width: 100%;
+    }
   }
