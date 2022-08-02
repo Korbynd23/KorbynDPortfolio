@@ -12,7 +12,6 @@ body {
 .header {
     padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:rgb(36, 110, 206);
     color: white;
     outline: 3px black outset;
     background-image: url(./images/tileable-wood-colored.png);
@@ -20,6 +19,13 @@ body {
     background-color: #2a2222;
     margin-top: 30px;
 }
+
+.shrink {
+    display: flex;
+    max-width: 50%;
+    height: 50%;
+}
+
 .myImage {
     max-width: 150px;
     max-height: 150px;
@@ -46,8 +52,6 @@ text-decoration: underline;
 
 .header nav {
     display: flex;
-    /* flex-direction: row; */
-    /* margin-left: 500px; */
     font-size: 28px;
     justify-content: flex-end;
     align-content: space-around;    
@@ -99,7 +103,7 @@ header a {
 }
 
 
-  #bigPic {
+#bigPic {
     box-shadow: 0px 0px 57px 15px rgb(247, 137, 47);
     width: 100%;
     border-radius: 5%;
@@ -178,9 +182,27 @@ a:link {
     text-decoration:solid;
   }
 
-  @media screen and (max-width=768px) {
-     .links {
-        width: 100%; }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(99, 104, 105);
+    }
+    .header {
+        display: flex;
+        width: 125vh;  
+    }
+    .aboutMe {
+        display: flex;
+        width: 120vh;
+    }
+    .links {
+        display: flex;
+        width: 120vh;
+        margin: 0 auto;
+    }
+    .workPhotos {
+        align-items: center;
+        justify-items: center;
+    }
     nav {
         flex-direction: column;
         height: fit-content;
