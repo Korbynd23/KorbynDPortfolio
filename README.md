@@ -2,6 +2,8 @@
 
 ## Description
 
+Link to deploy application: https://korbynd23.github.io/KorbynDPortfolio/
+
 The purpose of this project was to create a personal portfolio using HTML and CSS. Trying to maintain a clean/dry code and put what I learned in the first week of Boot Camp to the test. 
 
 GIVEN I need to sample a potential employee's previous work.
