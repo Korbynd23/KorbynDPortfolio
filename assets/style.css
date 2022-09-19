@@ -121,6 +121,9 @@ header a {
     border-radius: 5%;
     margin-bottom: 20px;
     margin-top: 40px;
+    max-height: 40vh;
+    max-width: 40vw;
+
 }
 
 .aboutMe h2 {
